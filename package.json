@@ -40,7 +40,9 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^25.3.0",
     "prettier": "^2.0.4",
-    "react-test-renderer": "^16.13.1"
+    "react-test-renderer": "^16.13.1",
+    "acorn": "^7.2.0",
+    "tmp": "^0.2.1"
   },
   "keywords": [
     "gatsby"
