@@ -1,0 +1,80 @@
+.blog-post hr {
+    background-color: #b8b8b933;
+}
+
+.blog-post .blog-post-content a {
+    color: var(--accent);
+}
+
+.blog-post .blog-post-content p,
+.blog-post .blog-post-content ul,
+.blog-post .blog-post-content ol {
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+.blog-post .blog-post-content blockquote {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background-color: rgba(100, 100, 100, 0.1);
+    border-left: 2px solid rgba(150, 150, 150, 0.8);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.blog-post .blog-post-content blockquote > p {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+
+.blog-post .blog-post-content ol {
+    list-style-type: decimal;
+    margin: 0 0 1.45rem 1.45rem;
+}
+
+.blog-post .blog-post-content ul {
+    list-style-type: disc;
+}
+
+.blog-post .blog-post-content ul li ul {
+    list-style-type: circle;
+}
+
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
+    background: #1e1e1e;
+    font-size: 0.9rem;
+}
+
+code[class*='language-']::before {
+    display: none;
+}
+
+.gatsby-highlight {
+    background-color: #1e1e1e;
+    border-radius: 0.3em;
+    margin: 2em 0;
+    padding: 0 0.5em;
+    overflow: auto;
+}
+
+.gatsby-highlight pre[class*='language-'].line-numbers {
+    padding: 0 0 0 2.8em;
+    overflow: initial;
+}
+
+@media screen and (min-width: 768px) {
+    .blog-post .blog-post-content p,
+    .blog-post .blog-post-content ul,
+    .blog-post .blog-post-content ol {
+        font-size: 1.2rem;
+    }
+
+    :not(pre) > code[class*='language-'],
+    pre[class*='language-'] {
+        font-size: 1.05rem;
+    }
+}
