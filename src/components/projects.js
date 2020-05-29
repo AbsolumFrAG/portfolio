@@ -80,7 +80,7 @@ export const PureProjects = ({ data }) => (
                 <div>
                     <Img fluid={data.nubium.childImageSharp.fluid} alt="Nubium" />
                     <div className="px-3 pt-4 md:px-6">
-                        <div className="font-bold text-xl mb-2">Face It</div>
+                        <div className="font-bold text-xl mb-2">Nubium</div>
                         <p className="text-custom-text-secondary text-sm">
                             Un petit jeu de plateforme codé avec{' '}
                             <a
