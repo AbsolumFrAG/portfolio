@@ -5,7 +5,7 @@ const socialIconSize = '18px';
 
 const Footer = (props) => (
     <footer className="w-full bg-transparent text-center text-custom-text-secondary p-6">
-        Made with{' '}
+        Fait avec{' '}
         <span role="img" aria-label="jsx-ally/accessible emoji">
             💙
         </span>{' '}
@@ -18,7 +18,7 @@ const Footer = (props) => (
             Lou Tigroudja
         </OutboundLink>{' '}
         ©&nbsp;{new Date().getFullYear()}.<br />
-        Built with&nbsp;
+        Construit avec&nbsp;
         <OutboundLink
             rel="noopener noreferrer"
             target="_blank"
@@ -38,9 +38,9 @@ const Footer = (props) => (
         <OutboundLink
             rel="noopener noreferrer"
             target="_blank"
-            href="https://heroku.com"
+            href="https://netlify.com"
             className="text-accent hover:text-accentHover">
-            Heroku
+            Netlify
         </OutboundLink>
         <div className="w-100 mt-2 flex justify-center items-center">
             <OutboundLink
