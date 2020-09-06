@@ -47,7 +47,7 @@ const Landing = (props) => {
                     </h1>
                 </div>
                 <p>
-                    Je suis un étudiant en 2ème année pour obtenir le Bachelor Responsable de Projets Informatiques à ISITech à Lyon.
+                    Je suis un étudiant en 1ère année pour obtenir le Bachelor Responsable de Projets Informatiques à ISITech à Lyon.
                     J'habite actuellement proche de{' '}
                     <a
                         rel="noopener noreferrer"

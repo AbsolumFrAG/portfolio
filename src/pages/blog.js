@@ -23,7 +23,7 @@ const BlogPage = ({ data }) => {
                             </p>
                             <p className="text-grey">
                                 {edge.node.frontmatter.date}&nbsp;&#10023;&nbsp;
-                                {edge.node.timeToRead} min read
+                                {edge.node.timeToRead} min de lecture.
                             </p>
                             <p className="text-accent hover:text-accentHover">
                                 Lire &#10230;
