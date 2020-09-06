@@ -10,7 +10,7 @@ const Experience = (props) => (
                 href="#"
                 className="hover:text-accent text-lg md:text-xl">
                 <strong className="inline-block mb-2 font-semibold">
-                    Technicien CRM/Développeur chez <a href="https://xefi.fr"/>XEFI.
+                    Technicien CRM/Développeur chez <a href="https://xefi.fr">XEFI</a>.
                 </strong>
             </a>
         </div>
