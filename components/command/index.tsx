@@ -223,6 +223,9 @@ const CommandMenu = () => {
                       <LinkedIn />
                       LinkedIn
                     </Item>
+                    <Item value="Statut" keybind="s s">
+                      Statut
+                    </Item>
                     <Item value="Email" keybind="g g">
                       <Mail />
                       Email
