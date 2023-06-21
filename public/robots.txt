@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://lou-tigroudja.com
+
+# Sitemaps
+Sitemap: https://lou-tigroudja.com/sitemap.xml
