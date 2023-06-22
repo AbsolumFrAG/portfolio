@@ -65,6 +65,7 @@ export default function Cobe() {
         { location: [37.99, 23.697], size: 0.05 }, // Athènes
         { location: [35.508, 139.11], size: 0.05 }, // Tokyo
         { location: [37.757, -122.478], size: 0.05 }, // San Francisco
+        { location: [-21.099, 55.589], size: 0.05 }, // La Réunion
       ],
       opacity: 0.85,
       onRender: (state) => {
