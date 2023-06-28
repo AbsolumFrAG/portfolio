@@ -1,4 +1,3 @@
-import { Analytics } from "@vercel/analytics/react";
 import debounce from "lodash.debounce";
 import { type AppType } from "next/app";
 import Router from "next/router";
@@ -24,7 +23,6 @@ const Website: AppType = ({ Component, pageProps }) => {
   return (
     <ThemeProvider disableTransitionOnChange defaultTheme="dark">
       <Component {...pageProps} />
-      <Analytics />
     </ThemeProvider>
   );
 };
