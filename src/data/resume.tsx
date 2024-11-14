@@ -48,12 +48,6 @@ export const DATA = {
         icon: Icons.linkedin,
         navbar: true,
       },
-      X: {
-        name: "X",
-        url: "https://x.com/Zetsumei_FR",
-        icon: Icons.x,
-        navbar: true,
-      },
       Email: {
         name: "Envoyez-moi un email",
         url: "mailto:lou.tigroudja07@gmail.com",
