@@ -23,14 +23,13 @@ export const metadata: Metadata = {
   description: `${DATA.description} spécialisé en développement Microsoft Dynamics 365, React, TypeScript, et Next.js.`,
   keywords: [
     "Développeur full-stack",
-    "Next.js",
-    "React",
+    "Développement Web",
+    "Développement Web Freelance",
+    "Développeur Web Freelance",
+    "Freelance",
     "Web Development",
     "Software Engineering",
-    "React",
-    "TypeScript",
-    "Next.js",
-    "JavaScript",
+    "Ingénieur logiciel",
     ...DATA.skills,
   ],
   authors: [{ name: DATA.name }],
@@ -51,7 +50,7 @@ export const metadata: Metadata = {
     siteName: DATA.name,
     images: [
       {
-        url: `${DATA.url}/og.png`,
+        url: `${DATA.url}/api/og`,
         width: 1200,
         height: 630,
       },
@@ -64,7 +63,7 @@ export const metadata: Metadata = {
     title: DATA.name,
     description: DATA.description,
     creator: "@Zetsumei_FR",
-    images: [`${DATA.url}/og.png`],
+    images: [`${DATA.url}/api/og`],
   },
 };
 
