@@ -1,7 +1,6 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Lou Tigroudja - Développeur Full-Stack";
 export const contentType = "image/png";
 
 export async function GET() {
