@@ -9,6 +9,10 @@ const nextConfig: NextConfig = {
     optimizeCss: true,
     cssChunking: "loose",
   },
+  poweredByHeader: false,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;

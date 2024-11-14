@@ -3,16 +3,23 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 
 const fontSans = FontSans({
   preload: true,
-  display: "optional",
+  display: "swap",
   subsets: ["latin"],
   variable: "--font-sans",
+  fallback: ["system-ui", "arial"],
+  adjustFontFallback: true,
 });
+
+export const viewport: Viewport = {
+  themeColor: "black",
+  colorScheme: "light dark",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
@@ -32,7 +39,12 @@ export const metadata: Metadata = {
     "Ingénieur logiciel",
     ...DATA.skills,
   ],
-  authors: [{ name: DATA.name }],
+  authors: [{ name: DATA.name, url: DATA.url }],
+  category: "Technologie",
+  colorScheme: "light dark",
+  icons: {
+    icon: "/favicon.ico",
+  },
   creator: DATA.name,
   publisher: DATA.name,
   formatDetection: {
@@ -46,7 +58,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: DATA.name,
     description: DATA.description,
-    url: DATA.url,
+    url: `${DATA.url}/api/og`,
     siteName: DATA.name,
     images: [
       {
