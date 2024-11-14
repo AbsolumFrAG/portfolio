@@ -98,7 +98,6 @@ export default function RootLayout({
               sameAs: [
                 DATA.contact.social.GitHub.url,
                 DATA.contact.social.LinkedIn.url,
-                DATA.contact.social.X.url,
               ],
             }),
           }}
