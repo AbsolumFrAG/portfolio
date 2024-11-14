@@ -20,45 +20,40 @@ export const metadata: Metadata = {
     default: DATA.name,
     template: `%s | ${DATA.name}`,
   },
-  publisher: "Vercel",
   description: DATA.description,
+  keywords: ["Développeur full-stack", "Next.js", "React", ...DATA.skills],
+  authors: [{ name: DATA.name }],
+  creator: DATA.name,
+  publisher: DATA.name,
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  alternates: {
+    canonical: DATA.url,
+  },
   openGraph: {
-    title: `${DATA.name}`,
+    title: DATA.name,
     description: DATA.description,
     url: DATA.url,
-    siteName: `${DATA.name}`,
+    siteName: DATA.name,
+    images: [
+      {
+        url: `${DATA.url}/og.png`,
+        width: 1200,
+        height: 630,
+      },
+    ],
     locale: "fr_FR",
     type: "website",
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
   twitter: {
-    title: `${DATA.name}`,
     card: "summary_large_image",
-  },
-  generator: "Next.js",
-  applicationName: "Next.js",
-  referrer: "origin-when-cross-origin",
-  keywords: [
-    DATA.name,
-    "JavaScript",
-    "TypeScript",
-    "Next.js",
-    "Vercel",
-    "React",
-  ],
-  creator: DATA.name,
-  alternates: {
-    canonical: "/",
+    title: DATA.name,
+    description: DATA.description,
+    creator: "@Zetsumei_FR",
+    images: [`${DATA.url}/og.png`],
   },
 };
 
@@ -69,6 +64,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: DATA.name,
+              url: DATA.url,
+              jobTitle: "Développeur Full-Stack",
+              sameAs: [
+                DATA.contact.social.GitHub.url,
+                DATA.contact.social.LinkedIn.url,
+                DATA.contact.social.X.url,
+              ],
+            }),
+          }}
+        />
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6",
