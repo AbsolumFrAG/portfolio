@@ -9,7 +9,7 @@ import "./globals.css";
 
 const fontSans = FontSans({
   preload: true,
-  display: "swap",
+  display: "optional",
   subsets: ["latin"],
   variable: "--font-sans",
 });
@@ -17,11 +17,22 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
   title: {
-    default: DATA.name,
+    default: `${DATA.name} | Développeur full-stack`,
     template: `%s | ${DATA.name}`,
   },
-  description: DATA.description,
-  keywords: ["Développeur full-stack", "Next.js", "React", ...DATA.skills],
+  description: `${DATA.description} spécialisé en développement Microsoft Dynamics 365, React, TypeScript, et Next.js.`,
+  keywords: [
+    "Développeur full-stack",
+    "Next.js",
+    "React",
+    "Web Development",
+    "Software Engineering",
+    "React",
+    "TypeScript",
+    "Next.js",
+    "JavaScript",
+    ...DATA.skills,
+  ],
   authors: [{ name: DATA.name }],
   creator: DATA.name,
   publisher: DATA.name,
