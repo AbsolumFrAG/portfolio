@@ -41,7 +41,6 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: DATA.name, url: DATA.url }],
   category: "Technologie",
-  colorScheme: "light dark",
   icons: {
     icon: "/favicon.ico",
   },
