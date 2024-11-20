@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import type { Metadata, Viewport } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
+import type { ReactNode } from "react";
 
 const fontSans = FontSans({
   preload: true,
@@ -41,9 +42,6 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: DATA.name, url: DATA.url }],
   category: "Technologie",
-  icons: {
-    icon: "/favicon.ico",
-  },
   creator: DATA.name,
   publisher: DATA.name,
   formatDetection: {
@@ -81,7 +79,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="fr" suppressHydrationWarning>
