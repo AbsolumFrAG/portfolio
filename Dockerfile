@@ -1,5 +1,5 @@
 FROM node:22-alpine AS base
-RUN corepack enable && corepack prepare pnpm@latest --activate
+RUN npm install -g pnpm
 
 FROM base AS deps
 WORKDIR /app
@@ -14,9 +14,9 @@ RUN pnpm build
 
 FROM base AS runner
 WORKDIR /app
-
 ENV NODE_ENV production
 
+# Création du groupe et de l'utilisateur non-root
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
@@ -27,7 +27,6 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 USER nextjs
 
 EXPOSE 3000
-
 ENV PORT 3000
 ENV HOSTNAME "0.0.0.0"
 
