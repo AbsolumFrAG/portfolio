@@ -1,4 +1,4 @@
-import { HomeIcon } from "lucide-react";
+import { HomeIcon, NotebookIcon } from "lucide-react";
 import { Icons } from "@/components/icons";
 
 // calculate experience in years dynamically
@@ -33,7 +33,10 @@ export const DATA = {
     "Docker",
     "Git",
   ],
-  navbar: [{ href: "/", icon: HomeIcon, label: "Accueil" }],
+  navbar: [
+    { href: "/", icon: HomeIcon, label: "Accueil" },
+    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+  ],
   contact: {
     social: {
       GitHub: {

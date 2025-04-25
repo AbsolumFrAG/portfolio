@@ -3,7 +3,7 @@
 import { MotionDiv } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { type VariantProps, cva } from "class-variance-authority";
-import { useMotionValue, useSpring, useTransform } from "framer-motion";
+import { useMotionValue, useSpring, useTransform } from "motion/react";
 import React, { type PropsWithChildren, useRef } from "react";
 
 interface DockProps extends VariantProps<typeof dockVariants> {

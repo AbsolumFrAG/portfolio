@@ -9,18 +9,18 @@ import {
 import { cn, shimmer, toBase64 } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
-import type React from "react";
+import { ReactNode } from "react";
 import Markdown from "react-markdown";
 
 type ProjectLink = {
   id: number;
-  icon: React.ReactNode;
+  icon: ReactNode;
   type: string;
   href: string;
 };
 
 interface ProjectCardProps {
-  children: React.ReactNode;
+  children: ReactNode;
   className?: string;
 }
 
@@ -115,9 +115,9 @@ const Header = ({ title, dates, description, href }: HeaderProps) => {
             {formattedLink}
           </div>
         ) : null}
-        <Markdown className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
-          {description}
-        </Markdown>
+        <div className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
+          <Markdown>{description}</Markdown>
+        </div>
       </div>
     </CardHeader>
   );
